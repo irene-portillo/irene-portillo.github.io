@@ -158,3 +158,38 @@ nav {
     height: 20px;
     fill: #1a1a2e;
 }
+
+/* SEctions */
+.section {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--section-pad) clamp(24px, 8vw, 100px);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    text-transform: lowercase;
+}
+
+@keyframes scrollPulse {
+    0%, 100% { transform: scaleY(1);   opacity: 0.8; }
+    50%       { transform: scaleY(0.3); opacity: 0.2; }
+}
+
+
