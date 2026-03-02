@@ -159,7 +159,6 @@ nav {
     fill: #1a1a2e;
 }
 
-/* SEctions */
 .section {
     position: relative;
     z-index: 10;
@@ -187,9 +186,157 @@ nav {
     text-transform: lowercase;
 }
 
-@keyframes scrollPulse {
-    0%, 100% { transform: scaleY(1);   opacity: 0.8; }
-    50%       { transform: scaleY(0.3); opacity: 0.2; }
+/* ABOUT */
+.section--about {
+    background: transparent;
 }
 
+.about-glass {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: clamp(32px, 5vw, 72px);
+    max-width: 1060px;
+    width: 100%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: clamp(36px, 5vw, 64px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 60px rgba(0,0,0,0.6);
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-photo-wrap {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+/* Real photo — uncomment img in HTML and remove placeholder div */
+.about-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Placeholder if no photo yet */
+.about-photo-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(180,140,210,0.35), rgba(80,60,130,0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--lavender);
+    letter-spacing: 0.05em;
+}
+
+.about-photo-ring {
+    position: absolute;
+    inset: -7px;
+    border-radius: 50%;
+    border: 1px solid rgba(232, 223, 245, 0.2);
+    animation: ringPulse 4s ease-in-out infinite;
+}
+
+@keyframes ringPulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50%       { opacity: 0.9; transform: scale(1.05); }
+}
+
+.fun-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.fun-fact {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    padding: 7px 12px;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.02);
+    letter-spacing: 0.02em;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.fun-fact:hover {
+    color: var(--lavender-dim);
+    border-color: rgba(232, 223, 245, 0.28);
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.about-heading {
+    font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+    font-weight: 300;
+    color: var(--lavender);
+    line-height: 1.25;
+}
+
+.about-heading em {
+    font-style: italic;
+    color: rgba(210, 180, 245, 0.85);
+}
+
+.about-bio {
+    font-size: 0.93rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.6);
+    max-width: 480px;
+}
+
+.skills-block {
+    margin-top: 4px;
+}
+
+.skills-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    text-transform: lowercase;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-badge {
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+    color: var(--lavender-dim);
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-border);
+    border-radius: 100px;
+    padding: 5px 14px;
+    transition: background 0.2s, border-color 0.2s;
+    cursor: default;
+}
+
+.skill-badge:hover {
+    background: rgba(232, 223, 245, 0.13);
+    border-color: rgba(232, 223, 245, 0.38);
+}
 
