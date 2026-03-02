@@ -562,3 +562,86 @@ nav {
     letter-spacing: 0.08em;
     margin-top: 40px;
 }
+
+/* Responsiveness */
+.scroll-hint {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeIn 1s 2s ease forwards;
+}
+.scroll-hint span {
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 38px;
+    background: linear-gradient(to bottom, var(--text-muted), transparent);
+    animation: scrollPulse 2.2s 2.5s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+    0%, 100% { transform: scaleY(1);   opacity: 0.8; }
+    50%       { transform: scaleY(0.3); opacity: 0.2; }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+
+@media (max-width: 750px) {
+    nav { padding: 18px 24px; }
+    .nav-links { gap: 16px; }
+    .nav-links a { font-size: 0.8rem; }
+
+    .about-glass {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+    }
+
+    .about-left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .about-photo-wrap {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fun-facts {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fun-fact {
+        font-size: 0.72rem;
+        padding: 5px 10px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+}
