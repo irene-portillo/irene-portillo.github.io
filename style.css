@@ -1,14 +1,97 @@
-*{
-    margin: 1;
-    padding: 1;
-
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header{
-    min-height: 100vh;
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --lavender:       #e8dff5;
+    --lavender-dim:   rgba(232, 223, 245, 0.65);
+    --glass-bg:       rgba(10, 8, 20, 0.55);
+    --glass-border:   rgba(232, 223, 245, 0.12);
+    --tag-bg:         rgba(232, 223, 245, 0.07);
+    --tag-border:     rgba(232, 223, 245, 0.18);
+    --text-muted:     rgba(255, 255, 255, 0.45);
+    --section-pad:    clamp(60px, 10vw, 120px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    overflow-y: auto; /* scrolling enabled */
+}
+
+canvas {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 0;
+    pointer-events: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-image:linear-gradient(rgba(174, 106, 129, 0.75), rgba(116, 66, 83, 0.75), url(images/plain_pink_banner.png));
-    background-position:center;
-    background-size:cover;
-    position:relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 52px;
+}
+
+.nav-logo {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.03em;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+}
+
+.nav-links a::before {
+    content: '//';
+    margin-right: 3px;
+    opacity: 0.5;
+}
+
+.nav-links a:hover,
+.nav-links a.nav-active {
+    color: var(--lavender);
 }
