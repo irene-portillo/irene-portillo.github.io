@@ -95,3 +95,66 @@ nav {
 .nav-links a.nav-active {
     color: var(--lavender);
 }
+
+.hero {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    font-weight: 300;
+    color: var(--lavender);
+    letter-spacing: 0.01em;
+    text-align: center;
+    animation: fadeUp 1.2s ease both;
+}
+
+.hero .subtitle {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.1em;
+    text-align: center;
+    animation: fadeUp 1.2s 0.15s ease both;
+}
+
+.social-row {
+    display: flex;
+    gap: 36px;
+    margin-top: 16px;
+    pointer-events: all;
+    animation: fadeUp 1.2s 0.3s ease both;
+}
+
+.social-circle {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(220, 210, 235, 0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.social-circle:hover {
+    transform: scale(1.12);
+    background: rgba(220, 210, 235, 1);
+}
+
+.social-circle svg {
+    width: 20px;
+    height: 20px;
+    fill: #1a1a2e;
+}
