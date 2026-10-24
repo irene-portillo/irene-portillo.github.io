@@ -1,91 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "keywords" content = "HTML, CSS, JavaScript, Irene Portillo Poblete">
-        <meta name = "viewport" content= "width = device-width, initial-scale = 1.0">
-        <title>Irene Portillo Poblete</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-logo">IrenePortillo.<span class="blink">_</span></div>
-            <ul class="nav-links">
-                <li><a href="#about">aboutMe</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
-        <!-- title areas -->
-        <div class="hero" id="home">
-            <h1>Irene Portillo Poblete</h1>
-            <p class="subtitle">Software Engineering, UX, Game Design</p>
-            <div class="social-row">
-                <a href="https://github.com/irene-portillo" class="social-circle" title="GitHub">
-                    <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.1-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 2.87-.39c.97.01 1.95.13 2.87.39 2.18-1.49 3.14-1.18 3.14-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.66.79.55C20.21 21.4 23.5 17.09 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/irene-portillo-poblete/" class="social-circle" title="LinkedIn">
-                    <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.57V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
-                </a>
-                <a href="#" class="social-circle" title="Resume?">
-                    <svg viewBox="0 0 24 24"><path d="M3.13 1.06C2.05 1.7 0 4.74 0 5.33v.67c0 1.4 1.3 2.63 2.5 2.63 1.43 0 2.63-1.2 2.63-2.63 0 1.43 1.17 2.63 2.6 2.63 1.44 0 2.6-1.2 2.6-2.63 0 1.43 1.2 2.63 2.63 2.63 1.43 0 2.62-1.2 2.62-2.63 0 1.43 1.17 2.63 2.6 2.63 1.44 0 2.6-1.2 2.6-2.63 0 1.43 1.2 2.63 2.63 2.63 1.2 0 2.49-1.23 2.49-2.63V5.33c0-.59-2.04-3.63-3.12-4.27C19.76.53 4.23.53 3.13 1.06zM8.5 9.78v.01c-.29.5-.83.83-1.4.83-.55 0-1.1-.33-1.39-.84-.54.51-1.27.84-2.09.84-.31 0-.62-.05-.9-.13v7.2c0 .98 1.54 2.31 3.14 2.31h11.28c1.6 0 3.14-1.33 3.14-2.31v-7.2c-.28.08-.59.13-.9.13-.82 0-1.55-.33-2.09-.84-.29.51-.84.84-1.39.84-.57 0-1.11-.33-1.4-.84-.29.51-.84.84-1.4.84s-1.11-.33-1.4-.84zm-.37 3.55h7.74c.3 0 .53.22.53.52v3.6H7.6v-3.6c0-.3.23-.52.53-.52z"/></svg>
-                </a>
-                <a href="mailto:iportill@andrew.cmu.edu" class="social-circle" title="Email">
-                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                </a>
-            </div>
-            <div class="scroll-hint"> <span>scroll</span> <div class="scroll-line"></div> </div>
-            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Irene Portillo Poblete">
+    <meta name="description" content="Irene Portillo Poblete: software engineering, UX, and game design.">
+    <title>Irene Portillo Poblete</title>
+    <link rel="icon" type="image/png" href="imgs/main-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">IrenePortilloPoblete.<span class="blink">_</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">aboutMe</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero -->
+    <header class="hero" id="home">
+        <h1>Irene Portillo Poblete</h1>
+        <p class="subtitle">Software Engineering, UX, Game Design</p>
+        <div class="social-row">
+            <a href="https://github.com/irene-portillo" class="social-circle" title="GitHub"><img src="imgs/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/irene-portillo-poblete/" class="social-circle" title="LinkedIn"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://drive.google.com/file/d/1gVxzRRxGbthZiZdJzRm_9ojcI9AyQlyF/view?usp=sharing" class="social-circle" title="Resume" target="_blank" rel="noopener noreferrer"><img src="imgs/resume.png" alt="Resume"></a>
         </div>
-        <!-- about section -->
+        <div class="scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
+    </header>
+
+    <main>
+        <!-- about -->
         <section id="about" class="section section--about">
             <div class="about-glass">
                 <div class="about-left">
-                    <div class="about-photo-wrap">
-                        <img src="imgs/profile.jpg" alt="Irene Portillo Poblete" class="about-photo">
-                        <div class="about-photo-ring"></div>
-                    </div>
-                    <div class="fun-facts">
-                        <div class="fun-fact">🎮 indie game dev at heart</div>
-                        <div class="fun-fact">🌙 night-owl coder</div>
-                        <div class="fun-fact">🎨 obsessed with UX details</div>
-                        <div class="fun-fact">🚀 always learning something new</div>
-                    </div>
+                    <img src="imgs/profile.jpg" alt="Irene Portillo Poblete" class="about-photo">
                 </div>
                 <div class="about-right">
                     <p class="section-label">// about me</p>
-                    <!-- <h2 class="about-heading">Building things<br><em>that feel alive.</em></h2> -->
                     <h2 class="about-heading">Building scalable systems,<br><em>experiences that feel alive.</em></h2>
                     <p class="about-bio">
-                        Hi! I'm Irene — a software engineer, UX designer, and game developer. I love building interfaces that are both technically sharp and genuinely delightful to use. When I'm not coding, you'll find me designing game mechanics or obsessing over pixel-perfect details.
+                        Hi, I'm Irene! I'm currently a first-gen senior studying Computer Science and Human-Computer Interaction at Carnegie Mellon University.
+                        I love working on creative uses of technology for fun such as game design, UX or XR, education.
+                        I mostly specialize in Software Engineering and also enjoy learning how large systems work.
                     </p>
-                    <div class="skills-block">
-                        <p class="skills-label">things I work with</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section id="skills" class="section section--skills">
+            <div class="skills-inner">
+                <p class="section-label">// skills</p>
+                <h2 class="skills-heading">Things I Work With</h2>
+
+                <div class="skills-groups">
+                    <div class="skills-group">
+                        <p class="skills-label">languages</p>
                         <div class="skills-grid">
-                            <span class="skill-badge">Unity</span>
-                            <span class="skill-badge">C#</span>
-                            <span class="skill-badge">JavaScript</span>
-                            <span class="skill-badge">Three.js</span>
-                            <span class="skill-badge">Figma</span>
-                            <span class="skill-badge">React</span>
                             <span class="skill-badge">Python</span>
-                            <span class="skill-badge">UX Research</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">C</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">C#</span>
+                            <span class="skill-badge">SML</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Lua</span>
+                            <span class="skill-badge">JavaScript / JSON</span>
                             <span class="skill-badge">HTML / CSS</span>
-                            <span class="skill-badge">Game Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-group">
+                        <p class="skills-label">frameworks &amp; ml</p>
+                        <div class="skills-grid">
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">TypeScript</span>
+                            <span class="skill-badge">PyTorch</span>
+                            <span class="skill-badge">HuggingFace</span>
+                            <span class="skill-badge">wandb</span>
+                            <span class="skill-badge">MCP</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-group">
+                        <p class="skills-label">cloud &amp; tools</p>
+                        <div class="skills-grid">
+                            <span class="skill-badge">AWS EC2</span>
+                            <span class="skill-badge">S3</span>
+                            <span class="skill-badge">DynamoDB</span>
+                            <span class="skill-badge">Athena</span>
+                            <span class="skill-badge">Lambda</span>
+                            <span class="skill-badge">Lake Formation</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">Linux</span>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">Vim</span>
+                            <span class="skill-badge">Unity</span>
+                            <span class="skill-badge">Figma</span>
+                            <span class="skill-badge">App Scripts</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Projects section -->
+
+        <!-- projects -->
         <section id="projects" class="section section--projects">
             <div class="projects-inner">
                 <p class="section-label">// projects</p>
                 <h2 class="projects-heading">Selected Work</h2>
-                <div class="projects-grid">
 
+                <div class="projects-grid">
                     <article class="project-card">
                         <div class="project-img-wrap">
                             <div class="project-img-placeholder"></div>
@@ -95,7 +128,9 @@
                             <h3 class="project-title">Project One</h3>
                             <p class="project-desc">A short one-liner about what this project does.</p>
                             <div class="project-tags">
-                                <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Game Design</span>
+                                <span class="tag">Unity</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Game Design</span>
                             </div>
                         </div>
                     </article>
@@ -109,7 +144,9 @@
                             <h3 class="project-title">Project Two</h3>
                             <p class="project-desc">A short one-liner about what this project does.</p>
                             <div class="project-tags">
-                                <span class="tag">React</span><span class="tag">Figma</span><span class="tag">UX Research</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">UX Research</span>
                             </div>
                         </div>
                     </article>
@@ -123,7 +160,8 @@
                             <h3 class="project-title">Project Three</h3>
                             <p class="project-desc">A short one-liner about what this project does.</p>
                             <div class="project-tags">
-                                <span class="tag">Three.js</span><span class="tag">JavaScript</span>
+                                <span class="tag">Three.js</span>
+                                <span class="tag">JavaScript</span>
                             </div>
                         </div>
                     </article>
@@ -137,35 +175,64 @@
                             <h3 class="project-title">Project Four</h3>
                             <p class="project-desc">A short one-liner about what this project does.</p>
                             <div class="project-tags">
-                                <span class="tag">Python</span><span class="tag">Game Design</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Game Design</span>
                             </div>
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
-        <!-- contact section -->
-            <section id="contact" class="section section--contact">
-        <div class="contact-inner">
-            <p class="section-label">// contact</p>
-            <h2 class="contact-heading">Let's make something<br><em>together.</em></h2>
-            <p class="contact-sub">Whether it's a collab, an opportunity, or just to say hi — my inbox is open.</p>
-            <a href="mailto:your@email.com" class="contact-cta">say hello →</a>
-            <div class="contact-links">
-                <a href="#">GitHub</a>
-                <span>·</span>
-                <a href="#">LinkedIn</a>
-                <span>·</span>
-                <a href="#">itch.io</a>
-            </div>
-            <p class="contact-footer">Irene Portillo Poblete · built with Three.js &amp; a lot of starlight</p>
-        </div>
-    </section>
 
-    </body>
+        <!-- contact -->
+        <section id="contact" class="section section--contact">
+            <div class="contact-split">
+                <div class="contact-left">
+                    <p class="section-label">// contact</p>
+                    <h2 class="contact-heading">Let's make<br>something<br><em>together.</em></h2>
+                    <p class="contact-sub">Whether it's a collab, an opportunity, or just to say hi, drop me a message.</p>
+                </div>
+
+                <form class="inbox-form" action="https://formspree.io/f/mbggdrld" method="POST">
+                    <div class="inbox-header">
+                        <div class="inbox-dot inbox-dot--red"></div>
+                        <div class="inbox-dot inbox-dot--yellow"></div>
+                        <div class="inbox-dot inbox-dot--green"></div>
+                        <span class="inbox-to">New Message</span>
+                    </div>
+
+                    <div class="inbox-field">
+                        <label for="inbox-name">From</label>
+                        <input type="text" id="inbox-name" name="name" placeholder="Your name" autocomplete="off" required>
+                    </div>
+                    <div class="inbox-divider"></div>
+
+                    <div class="inbox-field">
+                        <label for="inbox-subject">Subject</label>
+                        <input type="text" id="inbox-subject" name="subject" placeholder="What's this about?" autocomplete="off" required>
+                    </div>
+                    <div class="inbox-divider"></div>
+
+                    <div class="inbox-field inbox-field--message">
+                        <label for="inbox-message">Message</label>
+                        <textarea id="inbox-message" name="message" placeholder="Say something nice :)" required></textarea>
+                    </div>
+
+                    <div class="inbox-footer">
+                        <button type="submit" class="inbox-send">
+                            <img src="imgs/pointer.png" alt="">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="motion-toggle" class="motion-toggle" aria-pressed="false" aria-label="Pause animations" data-tip="Too much movement? Feel free to pause.">❚❚</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script type="module" src="./particles.js"></script>
     <script src="./scroll.js"></script>
+</body>
 </html>
