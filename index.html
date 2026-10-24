@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
@@ -117,70 +118,19 @@
             <div class="projects-inner">
                 <p class="section-label">// projects</p>
                 <h2 class="projects-heading">Selected Work</h2>
-
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-img-wrap">
-                            <div class="project-img-placeholder"></div>
-                            <div class="project-overlay"><a href="#" class="project-link">View →</a></div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project One</h3>
-                            <p class="project-desc">A short one-liner about what this project does.</p>
-                            <div class="project-tags">
-                                <span class="tag">Unity</span>
-                                <span class="tag">C#</span>
-                                <span class="tag">Game Design</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-img-wrap">
-                            <div class="project-img-placeholder"></div>
-                            <div class="project-overlay"><a href="#" class="project-link">View →</a></div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project Two</h3>
-                            <p class="project-desc">A short one-liner about what this project does.</p>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Figma</span>
-                                <span class="tag">UX Research</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-img-wrap">
-                            <div class="project-img-placeholder"></div>
-                            <div class="project-overlay"><a href="#" class="project-link">View →</a></div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project Three</h3>
-                            <p class="project-desc">A short one-liner about what this project does.</p>
-                            <div class="project-tags">
-                                <span class="tag">Three.js</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-img-wrap">
-                            <div class="project-img-placeholder"></div>
-                            <div class="project-overlay"><a href="#" class="project-link">View →</a></div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Project Four</h3>
-                            <p class="project-desc">A short one-liner about what this project does.</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Game Design</span>
-                            </div>
-                        </div>
-                    </article>
+                <div id="pj-show" class="pj-show">
+                <div class="pj-top">
+                    <div id="pj-filters" class="pj-filters" role="group" aria-label="Filter projects"></div>
+                    <div id="pj-bar" class="pj-bar">
+                        <button type="button" id="pj-prev" class="pj-arrow" aria-label="Previous project">‹</button>
+                        <span id="pj-pos"></span>
+                        <button type="button" id="pj-next" class="pj-arrow" aria-label="Next project">›</button>
+                        <button type="button" id="pj-toggle" class="pj-link-btn"></button>
+                    </div>
                 </div>
+                    <div class="pj-frame"><div id="pj-stage" class="pj-stage"></div></div>
+                </div>
+                <p id="pj-live" class="pj-sr" aria-live="polite"></p>
             </div>
         </section>
 
@@ -234,5 +184,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script type="module" src="./particles.js"></script>
     <script src="./scroll.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>
