@@ -19,7 +19,9 @@
             tags: ['Calendar Tools', 'ICS', 'Workflow Automation'],
             blurb: 'An event-to-calendar assistant designed to turn event details into importable calendar files.',
             overview: 'Explores reducing manual calendar entry by organizing event information into ICS files.',
-            img: '', alt: '', fit: 'contain'
+            img: 'imgs/projects/instacal.png',
+            alt: 'Instacal',
+            fit: 'contain'
         },
         {
             id: 'multiplayer', title: 'Multiplayer Systems & Game UI', cats: ['Games'],
@@ -40,7 +42,9 @@
             role: 'Collaborative full-stack prototype',
             overview: 'Combines model and cultural-context selection, conversation history, and Likert-scale response ratings in a React interface with an Express backend.',
             links: [{ label: 'Code', url: 'https://github.com/devika-prog/CrossCulturalAI' }],
-            img: '', alt: '', fit: 'contain'
+            img: 'imgs/projects/crosscultural.png',
+            alt: 'Tester using cross cultural ai',
+            fit: 'contain'
         },
         {
             id: 'scooter', title: 'Electric Scooter Experience', cats: ['UX'],
@@ -50,7 +54,9 @@
             overview: 'Designed for a 10-year-old rider, balancing independence with parent reassurance. My main contribution was digital UI, alongside some physical-prototype work.',
             reflection: 'Designing for a child pushed me to simplify the interface and be more deliberate about hierarchy and color. I also practiced organizing Figma components and animating variants. Next time, I would test earlier with a child closer to the intended rider’s age.',
             links: [{ label: 'Figma prototype', url: 'https://www.figma.com/design/xnu1UtkAdqdGzSANbcSktJ/TEAM-8---Research-Report---2-wheel-electric-vehicles?node-id=7102-202' }],
-            img: '', alt: '', fit: 'contain'
+            img: 'imgs/projects/scooter.png',
+            alt: 'Scooter dashboard and parent app screens designed in Figma',
+            fit: 'contain'
         },
         {
             id: 'nmt', title: 'Neural Machine Translation', cats: ['AI & Web'],
@@ -58,7 +64,9 @@
             blurb: 'Fine-tuned and compared MarianMT configurations on 127K English–French sentence pairs, evaluating translation quality with BLEU.',
             role: 'ML experimentation project',
             overview: 'Explored learning rate, beam-search width, batch size, and encoder freezing, tracking experiments with Weights & Biases.',
-            img: '', alt: '', fit: 'contain'
+            img: 'imgs/projects/nmt.png',
+            alt: 'Neural Machine Translation graph results',
+            fit: 'contain'
         },
         {
             id: 'scotty', title: 'Scotty’s Resources and Freebies', cats: ['AI & Web', 'UX'],
@@ -67,7 +75,9 @@
             role: 'Collaborative resource-discovery prototype',
             overview: 'Iterated on navigation, information hierarchy, map access, and chat interactions based on feedback. The delivered chatbot prototype used keyword matching.',
             links: [{ label: 'Prototype', url: 'https://tipvto-final-proj.edgeone.app/' }],
-            img: '', alt: '', fit: 'contain'
+            img: 'imgs/projects/scottys-resources.png',
+            alt: 'Scotty’s Resources and Freebies website showing search, categories and map',
+            fit: 'contain'
         },
         {
             id: 'shell', title: 'Mini Unix Shell', cats: ['Systems'],
