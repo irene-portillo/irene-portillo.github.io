@@ -44,3 +44,22 @@ const navObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 })
 
 document.querySelectorAll('[id]').forEach(el => navObserver.observe(el))
+
+;(() => {
+    const btn = document.getElementById('motion-toggle');
+    const saved = localStorage.getItem('motionPaused');
+    const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function setPaused(p) {
+        window.motionPaused = p;
+        document.body.classList.toggle('motion-paused', p);
+        btn.textContent = p ? '▶' : '❚❚';
+        btn.setAttribute('aria-pressed', p);
+        btn.setAttribute('aria-label', p ? 'Resume animations' : 'Pause animations');
+        btn.dataset.tip = p ? 'Motion paused. Click to resume.' : 'Too much movement? Feel free to pause.';
+        localStorage.setItem('motionPaused', p);
+    }
+
+    setPaused(saved !== null ? saved === 'true' : prefersReduced);
+    btn.addEventListener('click', () => setPaused(!window.motionPaused));
+})();

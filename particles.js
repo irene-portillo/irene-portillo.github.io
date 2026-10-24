@@ -78,6 +78,7 @@ function onPointerMove (event) {
 
 function animate () {
     requestAnimationFrame(animate)
+    if (window.motionPaused) { renderer.render(scene, camera); return; }
     render()
 }
 
